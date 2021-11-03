@@ -19,7 +19,7 @@ function decycle(obj, stack = []) {
 //Change Row Color When Selected
 var SelectClick = false;
 var onClick = function (args) {
-    SelectClick = true;
+/*    SelectClick = true;
     var Rows = grid.getRows(); //Get all rows
     var rowObj = grid.getRowObjectFromUID(ej.base.closest(args.target, '.e-row').getAttribute('data-uid')); // get selected row index
     var test = (Rows[rowObj.index].cells[1]);
@@ -61,7 +61,7 @@ var commandClick = function(args){
 	else{
 		SelectClick = false;
 	}
-
+*/
 }
 
 // This function is called by FileMaker to request or alter data in the grid
@@ -197,7 +197,7 @@ function rowSelected(args) {
 				{ buttonOption: { content: '✎', cssClass: 'e-flat' } },
 //				{ type: ej.grids.Grid.UnboundType,  buttonOption: { contentType: "imageonly", prefixIcon:"e-icon e-edit" } }
 			]},
-//			{ headerText: ' ', width: 45,  textAlign: 'Center', commands: [{ buttonOption: { content: '+', click: onClick } }] },
+			{ headerText: ' ', width: 45,  textAlign: 'Center', commands: [{ buttonOption: { content: '+', click: onClick } }] },
             { field: 'RecordID', visible: false, showInColumnChooser: false, headerText: 'Record ID', isPrimaryKey: true, width: '130' },
         	{ field: 'image', visible: false, template: '<div class="image"> <img src="${image}" alt="" /></div>', headerText: "Image", width: 130 },
 			{
