@@ -197,7 +197,7 @@ function rowSelected(args) {
 				{ buttonOption: { content: '✎', cssClass: 'e-flat' } },
 //				{ type: ej.grids.Grid.UnboundType,  buttonOption: { contentType: "imageonly", prefixIcon:"e-icon e-edit" } }
 			]},
-			{ headerText: ' ', width: 45,  textAlign: 'Center', commands: [{ buttonOption: { content: '+', click: onClick } }] },
+//			{ headerText: ' ', width: 45,  textAlign: 'Center', commands: [{ buttonOption: { content: '+', click: onClick } }] },
             { field: 'RecordID', visible: false, showInColumnChooser: false, headerText: 'Record ID', isPrimaryKey: true, width: '130' },
         	{ field: 'image', visible: false, template: '<div class="image"> <img src="${image}" alt="" /></div>', headerText: "Image", width: 130 },
 			{
