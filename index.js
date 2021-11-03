@@ -190,7 +190,7 @@ function rowSelected(args) {
         height: 800,
         rowHeight: 20,
 		allowGrouping: true,
-        groupSettings: { columns: ['Area'] },
+      //  groupSettings: { columns: ['Area'] },
 		commandClick:commandClick,
         columns: [
 						{ headerText: '', width: 65, showInColumnChooser: false, commands: [
