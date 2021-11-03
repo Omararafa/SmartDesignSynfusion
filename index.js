@@ -1,4 +1,4 @@
-﻿// Rev. 24-Oct-2021 - dom
+// Rev. 24-Oct-2021 - dom
 // Render a cyclic object as a flat structure so it can be stringified.
 function decycle(obj, stack = []) {
     if (!obj || typeof obj !== 'object')
@@ -176,22 +176,22 @@ function rowSelected(args) {
         allowSelection: true,
         allowFiltering: true,
         allowSorting: true,
-	allowResizing: true,
-	allowReordering: true,
-	rowSelecting: selectingEvent,
+		allowResizing: true,
+		allowReordering: true,
+		rowSelecting: selectingEvent,
         enableVirtualization: false,
-	enableInfiniteScrolling: true,
-	showColumnChooser: true,
-	toolbar: [{ text: "Number Of Selected Items = 0", id: 'NumberOfSelectedItems' }, 'ColumnChooser'],
-	gridLines: 'Both',
+		enableInfiniteScrolling: true,
+		showColumnChooser: true,
+		toolbar: [{ text: "Number Of Selected Items = 0", id: 'NumberOfSelectedItems' }, 'ColumnChooser'],
+		gridLines: 'Both',
         selectionSettings: { type: "Multiple"},
         enableHover: false,
         enableHeaderFocus: true,
         height: 800,
         rowHeight: 20,
-	allowGrouping: true,
-        //groupSettings: { columns: ['Area'] },
-	commandClick:commandClick,
+		allowGrouping: true,
+        groupSettings: { columns: ['Area'] },
+		commandClick:commandClick,
         columns: [
 						{ headerText: '', width: 65, showInColumnChooser: false, commands: [
 				{ buttonOption: { content: '✎', cssClass: 'e-flat' } },
